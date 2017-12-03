@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Chile Sensation - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Utilisation de bootstrap pour avoir un site responsive et utiliser son css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<!-- Utilisation de notre feuille de style CSS-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- utilisation de jquery pour pouvoir faire défiler le carousel photo -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	
+
+	
+<body>
+<!-- Utilisation d'une classe de bootstrap pour avoir une barre de naviguation -->
+<header> 
+		<nav class="navbar navbar-default">
+	  		<div class="container-fluid">
+			<div class="navbar-header">
+		  		<a class="navbar-brand" href="home.html">Chile Sensation</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="home.html">Home</a></li>
+			  <li><a href="destinations.html">Destinations</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+	  		</div>
+		</nav>
+</header>	
+<section class="jumbotron text-center">
+	<h1>Chile Sensation</h1>
+</section>
+	
+<section class="container">
+  <h2 class="hidden-lg"></h2>  
+
+	<!-- Création d'un carousel photo-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+        <!-- Indicateurs -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Images des slides -->
+        <div class="carousel-inner" role="listbox" style="height: 500px;">
+            <div class="item active">
+                <img src="images/image1.jpg"  alt="">
+            </div>
+
+            <div class="item">
+                <img src="images/image2.jpg"  alt="">
+            </div>
+			
+			<div class="item">
+                <img src="images/image4.jpg"  alt="">
+            </div>
+			
+			<div class="item">
+                <img src="images/image5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+	
+<section class="jumbotron text-center">
+	<article> 
+		<p>Hey !</p>
+		<p>Bienvenue sur Chile sensation. Nous sommes Richard et Alexandre, les deux créateurs de ces carnets de voyages.</p>
+		<p>Nous avons créer Chile sensation pour partager avec vous nos voyages, nos coups de cœurs et nos inspirations.</p>
+	</article>
+	
+  	<p>Bonne découverte !</p>
+</section>
+	
+	
+	<div class="copyright">&copy;2017 - <strong>Alexandre Dupont & Richard Boulenger</strong></div>
+</body>
+</html>
